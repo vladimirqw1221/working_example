@@ -64,12 +64,12 @@ class Locators:
 
 
     """Critical patch case"""
-    ITEN_1 = (By.CSS_SELECTOR, "#add-to-cart-sauce-labs-backpack")
-    ITEN_2 = (By.CSS_SELECTOR, "#add-to-cart-sauce-labs-bike-light")
-    ITEN_3 = (By.CSS_SELECTOR, "#add-to-cart-sauce-labs-bolt-t-shirt")
-    ITEN_4 = (By.CSS_SELECTOR, "#add-to-cart-sauce-labs-fleece-jacket")
-    ITEN_5 = (By.CSS_SELECTOR, "#add-to-cart-sauce-labs-onesie")
-    ITEN_6 = (By.XPATH, "//button[@id='add-to-cart-test.allthethings()-t-shirt-(red)']")
+    ITEM_1 = (By.CSS_SELECTOR, "#add-to-cart-sauce-labs-backpack")
+    ITEM_2 = (By.CSS_SELECTOR, "#add-to-cart-sauce-labs-bike-light")
+    ITEM_3 = (By.CSS_SELECTOR, "#add-to-cart-sauce-labs-bolt-t-shirt")
+    ITEM_4 = (By.CSS_SELECTOR, "#add-to-cart-sauce-labs-fleece-jacket")
+    ITEM_5 = (By.CSS_SELECTOR, "#add-to-cart-sauce-labs-onesie")
+    ITEM_6 = (By.XPATH, "//button[@id='add-to-cart-test.allthethings()-t-shirt-(red)']")
 
 
     """burger menu"""
