@@ -43,7 +43,7 @@ class FinishOrderPageClass(OverviewOrderClass):
             self.check_word(word, "Products")
             self.get_current_url()
             self.equal_url("https://www.saucedemo.com/inventory.html")
-            self.take_scrn_shot()
+
 
 
     def checking_finish_page_and_go_cart_page(self):
@@ -72,7 +72,7 @@ class FinishOrderPageClass(OverviewOrderClass):
             self.check_word(word, "Your Cart")
             self.get_current_url()
             self.equal_url("https://www.saucedemo.com/cart.html")
-            self.take_scrn_shot()
+
 
 
 

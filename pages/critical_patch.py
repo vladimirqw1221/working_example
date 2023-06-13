@@ -48,7 +48,7 @@ class CriticallPatchClass(BaseClass):
             self.get_current_url()
             """Navigate to Checkout: Complete!"""
             self.select_element_is_clickable(self.locator.GO_HOME_BTN).click()
-            self.take_scrn_shot()
+
 
     def case_criticall_patch_for_register_user(self):
         with allure.step("Check info, after finish critical patch, if use register user"):
@@ -94,7 +94,7 @@ class CriticallPatchClass(BaseClass):
             self.get_current_url()
             """Navigate to Checkout: Complete!"""
             self.select_element_is_clickable(self.locator.GO_HOME_BTN).click()
-            self.take_scrn_shot()
+
 
     def case_criticall_patch_for_guest_user(self):
         with allure.step("Check info, after finish critical patch, if use guested user"):

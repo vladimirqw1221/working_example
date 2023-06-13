@@ -140,7 +140,7 @@ class OverviewOrderClass(InformationCalss):
             self.check_word(word, "Thank you for your order!")
             self.get_current_url()
             self.equal_url("https://www.saucedemo.com/checkout-complete.html")
-            self.take_scrn_shot()
+
 
 
 

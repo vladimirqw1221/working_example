@@ -69,7 +69,7 @@ class InformationCalss(AddCartClass):
             word = self.select_element_is_visibile(self.locator.ZIP_CODE_ERROR)
             self.check_word(word, "Error: Postal Code is required")
             self.get_current_url()
-            self.take_scrn_shot()
+
 
     def checkout_info_page_enter_all_info(self):
         with allure.step("Checking next page if all filed added"):
@@ -157,6 +157,5 @@ class InformationCalss(AddCartClass):
         with allure.step("Check text for guest user, in checkout page"):
             word = self.select_element_is_visibile(self.locator.OVERVIEW)
             self.check_word(word, "Checkout: Overview")
-            self.take_scrn_shot()
             self.get_current_url()
             self.equal_url("https://www.saucedemo.com/checkout-step-two.html")
