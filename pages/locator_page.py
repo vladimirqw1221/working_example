@@ -29,6 +29,12 @@ class Locators:
     LOGIN_PAGE_LOCATOR = (By.CSS_SELECTOR,"div[id='login_credentials'] h4")
 
 
+
+    """Problem user"""
+    ADD_TO_CART  = (By.CSS_SELECTOR, "#add-to-cart-sauce-labs-backpack")
+    REMOVE_PROBLEM_USER = (By.CSS_SELECTOR, "#remove-sauce-labs-backpack")
+
+
     """Add to card"""
     ADD_TO_CART = (By.CSS_SELECTOR, "#add-to-cart-sauce-labs-backpack")
     ADD_TO_CART_TWO_ITEM = (By.CSS_SELECTOR, "#add-to-cart-sauce-labs-bike-light")
@@ -71,6 +77,11 @@ class Locators:
     CLOSE_BTN = (By.CSS_SELECTOR, "#react-burger-cross-btn")
     ABOUT_LINK = (By.CSS_SELECTOR, "#about_sidebar_link")
     LOGOUT_LINK = (By.CSS_SELECTOR, "#logout_sidebar_link")
+
+    """Problem user"""
+
+    ADD_TO_BAG_PROBLEM = (By.CSS_SELECTOR,"#add-to-cart-sauce-labs-backpack")
+    REMOVE_TO_BAG_PROBLEM = (By.CSS_SELECTOR, "#remove-sauce-labs-backpack")
 
 
 
