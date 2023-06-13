@@ -5,6 +5,6 @@ pytest_cache/
 TestResultContainer/
 pages/problem_user.py
 test_page/test_problem_user.py
-.env
+
 
 
