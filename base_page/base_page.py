@@ -4,7 +4,7 @@ import allure
 from selenium.webdriver.support.ui import WebDriverWait as wait
 from selenium.webdriver.support import expected_conditions as EC
 import datetime
-from enams.glodal_enams import GlodalEnums
+from enams.glodal_enams import GlobalEnums
 
 
 class BaseClass:
@@ -64,7 +64,7 @@ class BaseClass:
 
     def check_word(self, word, result):
         value_word = word.text
-        assert value_word == result, GlodalEnums.WRONG_ERROR_WORD.value
+        assert value_word == result, GlobalEnums.WRONG_ERROR_WORD.value
         print("Test assert word passed")
 
     """Method for getting current url"""
@@ -77,7 +77,7 @@ class BaseClass:
 
     def equal_url(self, result):
         value_equal = self.driver.current_url
-        assert value_equal == result, GlodalEnums.WRONG_ERROR_URL.value
+        assert value_equal == result, GlobalEnums.WRONG_ERROR_URL.value
         print(f"equal URL passed : {value_equal}")
 
 
