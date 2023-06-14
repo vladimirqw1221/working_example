@@ -3,7 +3,7 @@ from faker import Faker
 
 from data.data import Pesron
 
-faker_ru = Faker('ru_RU')
+faker_ru = Faker(locale='ru_RU')
 
 
 
