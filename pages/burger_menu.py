@@ -9,9 +9,10 @@ from dotenv import load_dotenv
 from pages.locator_page import Locators
 
 load_dotenv()
+
+
 class BurgerMenuClass(BaseClass):
     locator = Locators()
-
 
     def __init__(self, driver, url):
         super().__init__(driver, url)
@@ -33,8 +34,6 @@ class BurgerMenuClass(BaseClass):
             self.check_word(word, "Products")
             self.get_current_url()
 
-
-
     def open_menu_go_to_about_page(self):
         with allure.step("Navigate to about page"):
             self.select_element_is_visibile(self.locator.USER_NAME).send_keys(os.getenv('SECRET_USER'))
@@ -53,7 +52,6 @@ class BurgerMenuClass(BaseClass):
             self.check_word(word, "Products")
             self.get_current_url()
 
-
     def open_menu_and_logout(self):
         with allure.step("Check logout in burger menu"):
             self.select_element_is_visibile(self.locator.USER_NAME).send_keys(os.getenv('SECRET_USER'))
@@ -70,8 +68,3 @@ class BurgerMenuClass(BaseClass):
             word = self.select_element_is_visibile(self.locator.LOGIN_PAGE_LOCATOR)
             self.check_word(word, "Accepted usernames are:")
             self.get_current_url()
-
-
-
-
-
