@@ -2,6 +2,7 @@ dubag.py
 venv/
 scr/
 pytest_cache/
+__pycache__
 #allure
 TestResultContainer/
 #testing pqge
