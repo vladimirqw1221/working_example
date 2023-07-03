@@ -6,7 +6,7 @@ __pycache__
 #allure
 TestResultContainer/
 #testing pqge
-pages/problem_user.py
+
 
 #secrets data
 .env
