@@ -1,4 +1,4 @@
-import time
+
 
 import allure
 from selenium.webdriver.support.ui import WebDriverWait as wait
