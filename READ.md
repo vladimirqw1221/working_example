@@ -1,4 +1,4 @@
-# Project "working_example"
+# Project working_example
 
 This project is an example of working with [Selenium].
 
