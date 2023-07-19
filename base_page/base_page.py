@@ -88,6 +88,7 @@ class BaseClass:
     """Method for button back"""
 
     def navigate_to_back(self):
+        """Navigate back"""
         self.driver.back()
         current_url_back = self.driver.current_url
         print(f"Navigate to back page  : {current_url_back}")
