@@ -1,5 +1,3 @@
-
-
 import allure
 from selenium.webdriver.support.ui import WebDriverWait as wait
 from selenium.webdriver.support import expected_conditions as EC
@@ -63,9 +61,15 @@ class BaseClass:
     """Method for asset word on webpage"""
 
     def check_word(self, word, result):
+        """This method for checking headers on webpage
+        if word equal result test passed if not equal
+        testr failed and added screenshot to attachment"""
         value_word = word.text
-        assert value_word == result, GlobalEnums.WRONG_ERROR_WORD.value
-        print("Test assert word passed")
+        if value_word == result:
+            pass
+        else:
+            self.take_scrn_shot()
+            assert False, GlobalEnums.WRONG_ERROR_WORD.value
 
     """Method for getting current url"""
 
@@ -80,8 +84,8 @@ class BaseClass:
         assert value_equal == result, GlobalEnums.WRONG_ERROR_URL.value
         print(f"equal URL passed : {value_equal}")
 
-
     """Method for getting screenshot"""
+
     def take_scrn_shot(self):
         path_scrn = f'scr/screenshot{datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")}.png'
         screenshot = self.driver.get_screenshot_as_png()
@@ -91,11 +95,9 @@ class BaseClass:
         print("Screenshot added")
 
     """Method for button back"""
+
     def navigate_to_back(self):
-       self. driver.back()
-       current_url_back = self.driver.current_url
-       print(f"Navigate to back page  : {current_url_back}")
-       return current_url_back
-
-
-
+        self.driver.back()
+        current_url_back = self.driver.current_url
+        print(f"Navigate to back page  : {current_url_back}")
+        return current_url_back
