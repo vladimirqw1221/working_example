@@ -71,7 +71,7 @@ class BaseClass:
             self.take_scrn_shot()
             assert False, GlobalEnums.WRONG_ERROR_WORD.value
 
-    """Method for getting current url"""
+    """Method for getting current urls"""
 
     def get_current_url(self):
         current_url = self.driver.current_url
