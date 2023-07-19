@@ -58,7 +58,7 @@ class BaseClass:
         return self.driver.execute_script(f"document.getElementByClassName{element}.click();")
 
     def scroll_to_element(self, element):
-        return self.driver.execute_script("argument[0].scrollViewTo;", element)
+        return self.driver.execute_script("arguments[0].scrollIntoView;", element)
 
     """Method for asset word on webpage"""
 
