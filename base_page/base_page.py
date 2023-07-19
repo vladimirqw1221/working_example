@@ -61,17 +61,8 @@ class BaseClass:
     """Method for asset word on webpage"""
 
     def check_word(self, word, result):
-        """This method for checking headers on webpage
-        if word equal result test passed if not equal
-        testr failed and added screenshot to attachment"""
         value_word = word.text
-        if value_word == result:
-            pass
-        else:
-            self.take_scrn_shot()
-            assert False, GlobalEnums.WRONG_ERROR_WORD.value
-
-    """Method for getting current urls"""
+        assert value_word == result, GlobalEnums.WRONG_ERROR_WORD.value
 
     def get_current_url(self):
         current_url = self.driver.current_url
